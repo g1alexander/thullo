@@ -1,12 +1,10 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
+import count from "./modules/count";
 
-export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+const store = new createStore({
   modules: {
-  }
-})
+    count,
+  },
+});
+
+export default store;
